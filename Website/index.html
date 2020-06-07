@@ -5,96 +5,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css" type="text/css" media="all">
+    <script src="assets/script.js" defer></script>
 </head>
 
 <body>
     <nav>
-        <ul>
-            <li>products</li>
-            <li>education</li>
-            <li>blog</li>
-            <li></li>
-            <li>about us</li>
-            <li>contact</li>
-            <li>cart (0)</li>
-        </ul>
+        <div class="burger-menu">
+            <input type="checkbox" class="toggler">
+            <div class="burger">
+                <div></div>
+            </div>
+            <div class="menu">
+                <div class="menu-background">
+                    <ul class="menu-list">
+                        <li><a href="#">products</a></li>
+                        <li><a href="#">education</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img class="top-logo" src="assets/images/vector/logo.svg" alt="bezobalis logo">
     </nav>
 
-    <section>
-        <div>
-            <h1>Sustainability <br>
-                - not asceticity
-            </h1>
-            <p>
-                In BEZOBALiS we believe that people can enjoy sustainable lifestyle without making unnecessary
-                sacrifices. We bring solutions and compromises between what is good for us and for nature and helping to
-                decrease your ecological footprint in one of the first steps of waste production- shopping. We will be
-                pleased to show you that living sustainably doesn’t have to be expensive and complicated but easy and
-                pleasant. We believe that if people will reconnect with nature again, they will help themselves too.
-            </p>
-        </div>
-        <div>
-            <img src="" alt="">
-        </div>
-
-        <div>
-            <h1>How does it work? </h1>
-            <img src="" alt="">
-        </div>
+    <section class="accent">
+        <h2 class="hero-h2">first package - free store in Trencin</h2>
+        <img class="hero-img" src="assets/images/soybeans.jpg" alt="soybeans">
+        <h1 class="hero-h1">Sustainably, with love.</h1>
     </section>
-    <section>
-        <div>
-            <h1>Welcome to <br>
-                BEZOBALiS!
-            </h1>
-            <p>Take a virtual <br>
-                tour
-            </p>
-        </div>
 
-        <div>
-            <h1>Enter</h1>
-            <img src="" alt="">
-        </div>
-    </section>
     <section>
-        <h1>Top sustainable <br>
-            money savers
+        <h1>Sustainability
+            -not asceticity
         </h1>
+        <img class="hero-img" src="assets/images/woman-statue.jpg" alt="woman statue">
+        <p>
+            In BEZOBALiS we believe that people can enjoy sustainable lifestyle without making unnecessary
+            sacrifices. We bring solutions and compromises between what is good for us and for nature and helping to
+            decrease your ecological footprint in one of the first steps of waste production- shopping. We will be
+            pleased to show you that living sustainably doesn’t have to be expensive and complicated but easy and
+            pleasant.
+        </p>
+        <p class="strongItalic">
+            We believe that if people will reconnect with nature again, they will help themselves too.
+        </p>
+        <h1>How does it work?</h1>
+        <img class="infografic-mobile" src="assets/images/mobile-infographic.jpg" alt="">
+    </section>
+
+    <section class="accent">
         <div>
-            <p>product <br>
-                catalogue
-            </p>
+            <h1 class="white-text">Welcome to <br>
+                <span class="strong">BEZOBALiS!</span>
+            </h1>
+            <p class="padding-small center white-text">Would you like to have a look?</p>
         </div>
+
+        <div class="relative">
+            <img class="hero-img" src="assets/images/glass-jars-on-counter.jpg" alt="">
+            <h1 class="white-text absolute enter">Enter</h1>
+        </div>
+    </section>
+    <section>
+        <h1>Sustainable money savers</h1>
         <div>
-            <div>
-                <p>Manufacturer : Mesačnica</p>
-                <img src="" alt="">
-                <p>Menstrual cup</p>
-                <p>24.00</p>
+            <div class="saver-container">
+                <p class="center padding0">Manufacturer : Mesačnica</p>
+                <img class="product-square" src="assets/images/menstrual-cup-square.jpg" alt="menstrual cup">
+                <div class="inline">
+                    <p class="padding0">Menstrual cup</p>
+                    <p class="padding0">24.00</p>
+                </div>
             </div>
-            <div>
-                <p>Manufacturer : Bottlebottle</p>
-                <img src="" alt="">
-                <p>Reusable bottle</p>
-                <p>24.00</p>
+            <div class="saver-container">
+                <p class="center padding0">Manufacturer : Bottlebottle</p>
+                <img class="product-square" src="assets/images/water-bottles-square.jpg" alt="water bottles">
+                <div class="inline">
+                    <p class="padding0">Reusable bottle</p>
+                    <p class="padding0">24.00</p>
+                </div>
             </div>
-            <div>
-                <p>Manufacturer : Tierra Verde</p>
-                <img src="" alt="">
-                <p>Safety razor</p>
-                <p>24.00</p>
+            <div class="saver-container">
+                <p class="center padding0">Manufacturer : Tierra Verde</p>
+                <img class="product-square" src="assets/images/savety-razor-square.jpg" alt="savety razor">
+                <div class="inline">
+                    <p class="padding0">Safety razor</p>
+                    <p class="padding0">24.00</p>
+                </div>
             </div>
 
             <div>
+                <p>product catalogue</p>
+            </div>
+
+            <div>
+                <h1>Reviews</h1>
                 <div>
                     <p>I associate Martina and Martin with enthusiasm, dedication but mostly well thought through every
                         step they make. They have clear vision how to bring positive example for lot of other people.
                         They are special for me in what they do. This is exactly the way how to inspire people to
                         change.
                     </p>
-                    <p>IVANA MALEŠ</p>
-                    <p>Institute of circular economy</p>
+                    <p>IVANA MALEŠ <br>
+                        Institute of circular economy</p>
                 </div>
                 <div>
                     <p>BEZOBALiS is not only about waste-free shopping- Maťa and MAťo give you advice, direct you,
@@ -102,16 +119,16 @@
                         it is for shopping or just good mood. They do their job with heart, that’s why they have my
                         trust.
                     </p>
-                    <p>SLÁVKA HALČÁKOVÁ</p>
-                    <p>actress, moderator, author, product</p>
+                    <p>SLÁVKA HALČÁKOVÁ <br>
+                        actress, moderator, author, product</p>
                 </div>
                 <div>
                     <p>Maťka and Maťko came as a spring breeze and they’re as living water. They offer us ideas how to
                         be responsible for us, polite to the others and considerate to the planet with easiness and
                         truism. I am very grateful to them for this.
                     </p>
-                    <p>IVAN JEŽÍK</p>
-                    <p>event organiser of VOICES</p>
+                    <p>IVAN JEŽÍK <br> 
+                        event organiser of VOICES</p>
                 </div>
             </div>
 
@@ -125,33 +142,38 @@
         </div>
     </section>
     <footer>
+        <div class="table">
+            <p>OPENING HOURS</p>
+            <div class="table-container">
+                <div>Monday:</div>  <div> 9:00 – 18:00 </div>
+                <div>Tuesday:</div>  <div> 9:00 – 18:00 </div>
+                <div>Wednesday:</div>  <div> 9:00 – 18:00 </div>
+                <div>Thursday:</div>  <div> 9:00 – 18:00 </div>
+                <div>Friday:</div>  <div> 9:00 – 18:00 </div>
+                <div>Saturday:</div>  <div> 8:30 – 12:30 </div>
+                <div>Sunday:</div>  <div> closed</div>  
+            </div>
+        </div>
+
         <div>
             <p>FOLLOW US</p>
-            <img src="" alt="">
-            <img src="" alt="">
+            <div>
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
         </div>
+
         <div>
-            <p>ADDRESS</p>
-            <p>J. Braneckého 8, <br>
-                911 01 , Trenčín <br>
+            <p class="center">ADDRESS</p>
+            <p class="center padding0">J. Braneckého 8, <br>
+                911 01 ,  Trenčín <br>
                 Slovensko</p>
         </div>
-        <div>
-            <p>OPENING HOURS</p>
-            <p>
-                Monday: 9:00 – 18:00
-                Tuesday: 9:00 – 18:00
-                Wednesday: 9:00 – 18:00
-                Thursday: 9:00 – 18:00
-                Friday: 9:00 – 18:00
-                Saturday: 8:30 – 12:30
-                Sunday: closed
-            </p>
-        </div>
+
         <div>
             <p>CONTACT US</p>
         </div>
-        <p>©2020 BEZOBALiS | LENTiS s.r.o. | J. Braneckého 8, 91101 Trenčín | IČO: 52 246 515 | Zapísaný v: Obchodnom
+        <p class="bottom-text">©2020 BEZOBALiS | LENTiS s.r.o. | J. Braneckého 8, 91101 Trenčín | IČO: 52 246 515 | Zapísaný v: Obchodnom
             registri Okresného súdu Trenčín, oddiel: Sro, vl. č.: 37863/
         </p>
     </footer>
