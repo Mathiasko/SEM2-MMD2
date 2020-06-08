@@ -138,8 +138,10 @@
     text-decoration: none;
 }
 
+/* ----- COMMON ----- */
 html {
-    font-size: 15px;
+    font-size: 10px;
+    color: var(--text-color);
 }
 
 body {
@@ -158,19 +160,90 @@ nav {
 }
 
 section {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.flex-center{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .accent {
     background-color: var(--secondary-color);
+    color: var(--text-accent);
 }
 
 .hero-img {
     width: 19rem;
 }
+
+img{
+    width: 80vw;
+}
+
+.img{
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'galanogrotesque-light';
+    font-size: 4rem;
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: 'galanogrotesque-light';
+    text-align: center;
+    padding: 2rem;
+}
+
+p, .timetable {
+    font-family: 'galanogrotesque-light';
+    padding: 2rem;
+    font-size: 1.5rem;
+    line-height: 28px;
+}
+
+.bold{
+    font-family: 'galanogrotesque-medium'
+}
+
+.bold-italic{
+    font-family: 'galanogrotesque-mediumitalic';
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.important{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.footer-icon{
+    width: 6rem;
+    margin: 1rem;
+}
+/* ----- INDEX ----- */
+
+
 
 .hero-h2 {
     font-family: 'galanogrotesque-light';
@@ -186,34 +259,6 @@ section {
     padding: 0.5rem 2rem;
 }
 
-h1 {
-    color: var(--text-color);
-    font-family: 'galanogrotesque-light';
-    text-align: center;
-    font-size: 2.5rem;
-    padding: 2rem;
-}
-
-h2 {
-    color: var(--text-color);
-    text-align: center;
-}
-
-p {
-    font-family: 'galanogrotesque-light';
-    padding: 2rem;
-    font-size: 1rem;
-    line-height: 28px;
-}
-
-.strongItalic {
-    font-family: 'galanogrotesque-mediumitalic';
-}
-
-.strong {
-    font-family: 'galanogrotesque-medium';
-}
-
 .infografic-mobile {
     width: 100vw;
 }
@@ -222,21 +267,12 @@ p {
     color: var(--text-accent);
 }
 
-.center {
-    text-align: center;
-}
+
 
 .padding-small {
     padding: 0rem;
 }
 
-.relative {
-    position: relative;
-}
-
-.absolute {
-    position: absolute;
-}
 
 .enter {
     position: absolute;
@@ -277,7 +313,7 @@ footer{
 
 .table-container{
     display: grid;
-    grid-template-columns: 6rem 6rem;
+    grid-template-columns: 10rem 10rem;
 
 }
 
@@ -287,6 +323,18 @@ footer{
     padding: 15px 10px;
 }
 
+/* ----- EDUCATION ----- */
+
+/* ----- ABOUT US ----- */
+
+.icon{
+    width: 40vw;
+    
+}
+
+/* ----- ARTICLE ----- */
+
+/* ----- PRODUCTS ----- */
 
 
 
