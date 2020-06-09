@@ -248,6 +248,9 @@ p, .timetable {
     margin: 1rem;
 }
 
+.tam-circle {
+    border-radius: 50%;
+}
 /* ----- INDEX ----- */
 
 .hero-h2 {
@@ -550,6 +553,14 @@ footer {
 
     .tam-here {
         margin-top: auto;
+    }
+
+    .tam-bottom-marg {
+        margin-bottom: 50px;
+    }
+
+    .tam-sec-pad {
+        padding: 7vw;
     }
 }
 
