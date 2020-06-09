@@ -858,10 +858,64 @@ footer {
         margin-left: 5vw;
     }
 
+    /* products */
 
+    .catalogueTitle{
+        width: 25%;
+        text-align: left;
+    }
 
+    .catalogueText{
+        top: 40%;
+        width: 40%;
+    }
 
+    .catalogueImage{
+        width: 30%;
+        top: 12%;
+        right: 9%;
+    }
 
+    .catalogueAccent{
+        top: 0;
+        right: 0;
+        left: 50%;
+        bottom: 0;
+        background-color: var(--secondary-color);
+    }
+
+    .catalogueNote{
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        width: 80%;
+        margin-left: 18vw;
+    }
+
+    .catalogueNoteImg1{
+        width: 280px;
+        transform: rotate(20deg);
+        left: 4%;
+    }
+
+    .catalogueNoteImg2{
+        width: 200px;
+        left: 10%;
+        transform: translateY(-40px);
+    }
+
+    .saver-container{
+        width: 30%;
+    }
+    
+    .productsDiv{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dleft{
+        text-align: left;
+    }
 
 
 
