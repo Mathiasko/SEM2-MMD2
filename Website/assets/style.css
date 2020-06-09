@@ -210,7 +210,7 @@ p, .timetable {
     font-family: 'galanogrotesque-light';
     padding: 2rem;
     font-size: 1.5rem;
-    line-height: 28px;
+    line-height: 40px;
 }
 
 .bold {
@@ -362,6 +362,10 @@ footer {
     display: none ;
 }
 
+
+
+
+
 @media (min-width: 450px) {
     .hiddenSmall{
         display: block;
@@ -496,10 +500,58 @@ footer {
         grid-row: 1 / 5;
     }
 
+/* ----- CONTACT ----- */
+    .tam-flex {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
 
+    .tam-flex > div {
+        width: 30vw;
+    }
 
+    .tam-flex > div > img.icon {
+        width: 40%;
+    }
+
+    .tam-fullscreen {
+        height: 100vh;
+    }
+
+    .tam-flex-vertical {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .tam-ill-hours {
+        width: 100%;
+        margin: 0 100px;
+    }
+
+    .tam-contact-pic {
+        width: 25%;
+        height: 90%;
+    }
+
+    .tam-flip-hor {
+        transform: scale(-1, 1); 
+        transform-origin: center;
+    }
+
+    .tam-ill-background {
+        z-index: -10;
+    }
+
+    .tam-neg-margin {
+        margin-left: -200px;
+    }
+
+    .tam-here {
+        margin-top: auto;
+    }
 }
-
 
 
 
