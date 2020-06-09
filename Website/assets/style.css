@@ -93,6 +93,11 @@
     transform: translateX(0px)
 }
 
+.burger-menu .toggler:checked~.menu>.menu-background>.burgerLogo {
+    opacity: 1;
+    transform: translateX(0px)
+}
+
 .burger-menu .menu {
     position: fixed;
     top: 0;
@@ -134,8 +139,18 @@
 }
 
 .burger-menu .menu>.menu-background>.menu-list>li>a {
+    font-size: 8vw;
+    font-family: 'galanogrotesque-light';
     color: var(--text-color);
     text-decoration: none;
+}
+
+.burgerLogo{
+    top: 10%;
+    width: 30vw;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.5s ease;
 }
 
 /* ----- COMMON ----- */
@@ -210,7 +225,7 @@ p, .timetable {
     font-family: 'galanogrotesque-light';
     padding: 2rem;
     font-size: 1.5rem;
-    line-height: 28px;
+    line-height: 25px;
 }
 
 .bold {
@@ -284,6 +299,14 @@ p, .timetable {
     right: 0;
 }
 
+.nut{
+    width: 35vw;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    transform: rotate(30deg);
+}
+
 .saver-container {
     padding: 25px;
 }
@@ -319,9 +342,10 @@ footer {
 }
 
 .bottom-text {
+    background-color: rgb(189, 146, 82);
     font-size: 0.8rem;
-    line-height: 15px;
-    padding: 15px 10px;
+    line-height: 1.5vw;
+    padding: 1.5vw 1.5vw;
 }
 
 /* ----- EDUCATION ----- */
@@ -388,6 +412,11 @@ footer {
     h2{
         text-align: left;
         font-size: 5rem;
+    }
+
+    p{
+        font-size: 1.1vw;
+        line-height: 1.8vw;
     }
 
     .vertical{
@@ -467,6 +496,14 @@ footer {
         font-size: 1.5vw;
     }
 
+    .nut{
+        width: 25vw;
+        top: 20%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        transform: rotate(30deg);
+    }
+
     .susGr1{
         padding: 5vw;
         grid-column: 1;
@@ -496,10 +533,242 @@ footer {
         grid-row: 1 / 5;
     }
 
+    .bigimg{
+        height: 50vw;
+        width: 50vw;
+    }
+
+    .bigCenter{
+        margin-top: 30%;
+        text-align: center;
+    }
+
+    .saversGrid{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 0 5vw;
+    }
+
+    .product-square{
+        width: 27vw;
+    }
+
+    .hPadding{
+        padding: 2vw 5vw;
+    }
+
+    .dAbsolute{
+        position: absolute;
+    }
+
+    .dRelative{
+        position: relative;
+    }
+
+    .reviews{
+        height: 60vw;
+    }
+
+    .review1, .review2, .review3{
+        width: 40%;
+    }
+
+    .review1{
+        top: 20%;
+        left: 5%;
+    }
+
+    .review2{
+        top: 20%;
+        left: 55%;
+    }
+
+    .review3{
+        top: 60%;
+        left: 30%;
+    }
+
+    /*  */
+
+    .footerGrid{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .futGr1{
+        grid-row: 1;
+        grid-column: 3;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .futGr2{
+        grid-row: 1;
+        grid-column: 1;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .futGr3{
+        grid-row: 1;
+        grid-column: 2;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .futGr4{
+        grid-column: 1;
+        grid-row: 2;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .bottom-text{
+        font-size: 1vw;
+    }
+/* education */
+
+    .width35{
+        width: 36%;
+    }
+
+    .width60{
+        width: 60%;
+    }
+
+    .important{
+        font-size: 2.5vw;
+        line-height: 3.5vw;
+    }
+
+    .eduImg{
+        top: 50%;
+        left: 50%;
+        width: 20vw;
+        transform: translate(-50%, -50%);
+    }
+
+    .height90{
+        height: 40vw;
+    }
+
+    .r5{
+        right: 8.5%;
+        top: 20%;
+        width: 23vw;
+    }
+
+    .eduContact{
+        right: 12%;
+        top: 70%;
+    }
+
+    .dInline{
+        display: flex;
+        justify-content: space-around;
+        margin: 5vw 0;
+    }
+    
+    .wid80{
+        width: 80%;
+    }
+
+    .companiesLogos{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .companiesLogo{
+        max-height:200px;
+        width: auto;
+        margin: 3vw 0;
+    }
+
+    /* About */
+
+    .aboutImg{
+        top: 55%;
+        left: 50%;
+        width: 20vw;
+        transform: translate(-50%, -50%);
+    }
+
+    .alignRight{
+        top: 0%;
+        left: 5%;
+        text-align: right;
+    }
+
+    .nec{
+        right: 5%;
+    }
+
+    .sust{
+        bottom: -5%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .storyImg{
+        margin: 3vw 5vw;
+        width: 40%;
+    }
+
+    .storyText{
+        width: 45%;
+    }
+
+    .storyText1{
+        right: 5%;
+        top: 25%;
+    }
+
+    .storyText2{
+        right: 5%;
+        top: 55%;
+    }
+
+    .storyText3{
+        right: 5%;
+        top: 75%;
+    }
+
+    .valuesGrid{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 5vw;
+        grid-row-gap: 3vw;
+        padding: 2vw 5vw;
+    }
+
+    .valuesTitle{
+        grid-column: 1/3;
+    }
+
+    .icon{
+        width: 25%;
+    }
+
+    .missionText{
+        width: 60%;
+    }
+
+    .missionImg{
+        top: 27%;
+        right: 8%;
+    }
+
+    .missionMarBot{
+        margin-bottom: 5vw;
+    }
+
+
+
+
+
 
 
 }
-
 
 
 
