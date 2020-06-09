@@ -848,6 +848,16 @@ footer {
         background-color: rgb(180, 180, 180);
     }
 
+    .shareIcon{
+        width: 60px;
+        margin: 22px;
+    }
+
+    .shareText{
+        margin: 17px;
+        margin-left: 5vw;
+    }
+
 
 
 
