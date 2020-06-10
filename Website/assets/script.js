@@ -20,6 +20,7 @@ const productPackaging = document.getElementById('product-detail')
 const productTags = document.getElementById('')
 const productImage = document.getElementById('product-image')
 
+let = productToDisplay = ''
 
 function getProducts() {
     const xhttp = new XMLHttpRequest();
@@ -62,10 +63,8 @@ function getProducts() {
 
 }
 
-let = productToDisplay = ''
-
 function renderProduct(productId) {
-
+    window.scrollTo(0, 0);
     const productCatalogue = document.getElementById('productCatalogue')
     const singleProduct = document.getElementById('singleProduct')
     productCatalogue.classList.add('hidden');
@@ -81,7 +80,7 @@ function renderProduct(productId) {
 
     productName.innerHTML = productsArr[productToDisplay].name
     productPrice.innerHTML = productsArr[productToDisplay].price
-    productPrice.innerHTML += '‎€ /' + productsArr[productToDisplay].pcg
+    productPrice.innerHTML += '‎€ / ' + productsArr[productToDisplay].pcg
     productAboutManufacturer.innerHTML = productsArr[productToDisplay].about_manufacturer
     productDescription.innerHTML = productsArr[productToDisplay].description
     productDidYouKnow.innerHTML = productsArr[productToDisplay].did_you_know
@@ -222,7 +221,7 @@ function renderProducts() {
         productInlineDiv.appendChild(productNameDiv)
 
         const productPriceDiv = document.createElement('p')
-        productPriceDiv.innerHTML = productsArr[i].price
+        productPriceDiv.innerHTML = productsArr[i].price + '€/' + productsArr[i].pcg
         productPriceDiv.classList.add('padding0')
         productInlineDiv.appendChild(productPriceDiv)
 

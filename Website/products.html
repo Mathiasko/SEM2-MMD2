@@ -11,25 +11,39 @@
 
 <body onload="getProducts()">
     <nav>
-        <div class="burger-menu">
+        <div class="burger-menu hiddenBig">
             <input type="checkbox" class="toggler">
             <div class="burger">
                 <div></div>
             </div>
             <div class="menu">
                 <div class="menu-background">
+                    <img class="absolute burgerLogo" src="assets/images/vector/logo.svg" alt="">
                     <ul class="menu-list">
-                        <li><a href="#">products</a></li>
-                        <li><a href="#">education</a></li>
-                        <li><a href="#">blog</a></li>
-                        <li><a href="#">about us</a></li>
-                        <li><a href="#">contact</a></li>
-                        <li></li>
+                        <li><a href="products.html">products</a></li>
+                        <li><a href="education.html">education</a></li>
+                        <li><a href="blog.html">blog</a></li>
+                        <li><a href="about_us.html">about us</a></li>
+                        <li><a href="contact.html">contact</a></li>
                     </ul>
                 </div>
             </div>
+            <a href="index.html"><img class="top-logo" src="assets/images/vector/logo.svg" alt="bezobalis logo"></a>
         </div>
-        <img class="top-logo" src="assets/images/vector/logo.svg" alt="bezobalis logo">
+
+        <div class="tam-desktopnav hiddenSmall">
+            <ul class="menu-list">
+                <li><a href="products.html">products</a></li>
+                <li><a href="education.html">lectures</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="index.html"><img class="top-logo" src="assets/images/vector/logo.svg"
+                            alt="bezobalis logo"></a></li>
+                <li><a href="about_us.html">about us</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li class="tam-hidden">cart</li>
+            </ul>
+        </div>
+
     </nav>
 
     <section id="productCatalogue">
@@ -65,7 +79,7 @@
             </p>
         </section>
 
-        <section>
+        <section class="padTop">
             <div class="sortProduct">
                 <h1 class="hPadding">Sort by</h1>
                 <a id="sortDiv" class="flex sortByA" href="">
@@ -108,33 +122,49 @@
 
 
     <footer>
-        <div>
-            <p>FOLLOW US</p>
-            <img src="" alt="">
-            <img src="" alt="">
+        <div class="footerGrid">
+            <div class="table futGr1">
+                <p>OPENING HOURS</p>
+                <div class="table-container timetable">
+                    <p class="futTime">Monday:</p>
+                    <p class="futTime"> 9:00 – 18:00 </p>
+                    <p class="futTime">Tuesday:</p>
+                    <p class="futTime"> 9:00 – 18:00 </p>
+                    <p class="futTime">Wednesday:</p>
+                    <p class="futTime"> 9:00 – 18:00 </p>
+                    <p class="futTime">Thursday:</p>
+                    <p class="futTime"> 9:00 – 18:00 </p>
+                    <p class="futTime">Friday:</p>
+                    <p class="futTime"> 9:00 – 18:00 </p>
+                    <p class="futTime">Saturday:</p>
+                    <p class="futTime"> 8:30 – 12:30 </p>
+                    <p class="futTime">Sunday:</p>
+                    <p class="futTime"> closed</p>
+                </div>
+            </div>
+
+            <div class="flex-center futGr2">
+                <p>FOLLOW US</p>
+                <div>
+                    <img class="footer-icon" src="assets/images/vector/fb.svg" alt="">
+                    <img class="footer-icon" src="assets/images/vector/ig.svg" alt="">
+                </div>
+            </div>
+
+            <div class="futGr3">
+                <p class="center">ADDRESS</p>
+                <p class="center padding0">J. Braneckého 8, <br>
+                    911 01 , Trenčín <br>
+                    Slovensko</p>
+            </div>
+
+            <div class="futGr4">
+                <p>CONTACT US</p>
+            </div>
         </div>
-        <div>
-            <p>ADDRESS</p>
-            <p>J. Braneckého 8, <br>
-                911 01 , Trenčín <br>
-                Slovensko</p>
-        </div>
-        <div>
-            <p>OPENING HOURS</p>
-            <p>
-                Monday: 9:00 – 18:00
-                Tuesday: 9:00 – 18:00
-                Wednesday: 9:00 – 18:00
-                Thursday: 9:00 – 18:00
-                Friday: 9:00 – 18:00
-                Saturday: 8:30 – 12:30
-                Sunday: closed
-            </p>
-        </div>
-        <div>
-            <p>CONTACT US</p>
-        </div>
-        <p>©2020 BEZOBALiS | LENTiS s.r.o. | J. Braneckého 8, 91101 Trenčín | IČO: 52 246 515 | Zapísaný v: Obchodnom
+
+        <p class="bottom-text">©2020 BEZOBALiS | LENTiS s.r.o. | J. Braneckého 8, 91101 Trenčín | IČO: 52 246 515 |
+            Zapísaný v: Obchodnom
             registri Okresného súdu Trenčín, oddiel: Sro, vl. č.: 37863/
         </p>
     </footer>
