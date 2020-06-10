@@ -51,6 +51,18 @@ function getProducts() {
 
 let= productToDisplay=''
 
+const productName = document.getElementById('priduct-name')
+const productPrice = document.getElementById('priduct-price')
+const productAboutManufacturer = document.getElementById('about-manufacturer')
+const productDescription = document.getElementById('product-description')
+const productDidYouKnow = document.getElementById('did-you-know')
+const productHowToUse = document.getElementById('how-to-use')
+const productIngredients = document.getElementById('product-detail')
+const productManufacturer = document.getElementById('product-manufacturer')
+const productPackaging = document.getElementById('product-detail')
+const productTags = document.getElementById('')
+const productImage = document.getElementById('product-image')
+
 function renderProduct(productId){
 
     for(let i= 0; i < productsArr.length; i++){
@@ -61,29 +73,25 @@ function renderProduct(productId){
 
     console.log(productToDisplay)
 
-    const productName = document.getElementById('priduct-name')
-    const productPrice = document.getElementById('priduct-price')
-    const productAboutManufacturer = document.getElementById('about-manufacturer')
-    const productDescription = document.getElementById('product-description')
-    const productDidYouKnow = document.getElementById('did-you-know')
-    const productHowToUse = document.getElementById('how-to-use')
-    const productIngredients = document.getElementById('product-detail')
-    const productManufacturer = document.getElementById('product-manufacturer')
-    const productPackaging = document.getElementById('product-detail')
-    const productPcG = document.getElementById('')
-    const productTags = document.getElementById('')
-    const productImage = document.getElementById('product-image')
-
     productName.innerHTML= productsArr[productToDisplay].name
     productPrice.innerHTML= productsArr[productToDisplay].price
+    productPrice.innerHTML+= '‎€ /' + productsArr[productToDisplay].pcg
     productAboutManufacturer.innerHTML= productsArr[productToDisplay].about_manufacturer
     productDescription.innerHTML= productsArr[productToDisplay].description
     productDidYouKnow.innerHTML= productsArr[productToDisplay].did_you_know
     productHowToUse.innerHTML= productsArr[productToDisplay].how_to_use
     productIngredients.innerHTML= productsArr[productToDisplay].ingredientsmaterial
-    productManufacturer.innerHTML= productsArr[productToDisplay].manufacturer
+    productManufacturer.innerHTML= 'Manufacturer: ' + productsArr[productToDisplay].manufacturer
     productPackaging.innerHTML= productsArr[productToDisplay].packaging
     productImage.src= productsArr[productToDisplay].image
+}
+
+function updatePackage(){
+    productPackaging.innerHTML= productsArr[productToDisplay].packaging
+}
+
+function updateMaterial(){
+    productPackaging.innerHTML= productsArr[productToDisplay].ingredientsmaterial
 }
 
 function getBlogs() {
@@ -212,4 +220,12 @@ function renderProducts(){
         productInlineDiv.appendChild(productPriceDiv)
         
     }
+}
+
+function active(div) {
+    const activeLinks = document.querySelectorAll('.materialPackage > p');
+    for (let i = 0; i < activeLinks.length; i++){
+        activeLinks[i].classList.remove('active');
+    }
+    div.classList.add('active');
 }
