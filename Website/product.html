@@ -11,16 +11,52 @@
 
 <body>
     <nav>
-        <ul>
-            <li>products</li>
-            <li>education</li>
-            <li>blog</li>
-            <li></li>
-            <li>about us</li>
-            <li>contact</li>
-            <li>cart (0)</li>
-        </ul>
+        <div class="burger-menu">
+            <input type="checkbox" class="toggler">
+            <div class="burger">
+                <div></div>
+            </div>
+            <div class="menu">
+                <div class="menu-background">
+                    <ul class="menu-list">
+                        <li><a href="#">products</a></li>
+                        <li><a href="#">education</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img class="top-logo" src="assets/images/vector/logo.svg" alt="bezobalis logo">
     </nav>
+
+    <section class="flex">
+        <img id="product-image" class="product-image" src="" alt="">
+        <div class="product-info">
+            <h1 id="priduct-name" class="priduct-name"></h1>
+            <h2 id="priduct-price" class="priduct-price"></h2>
+            <p id="product-manufacturer" class="product-manufacturer">Manufacturer: </p>
+            <p id="product-description" class="product-description"></p>
+            <button>Add to my cart</button>
+            <div class="product-details">
+                <p class="product-packaging">Packaging</p>
+                <p class="product-material">Material / Ingredients</p>
+                <p id="product-detail" class="product-detail"></p>
+            </div>
+            <h2 class="">About Manufacturer</h2>
+            <p id="about-manufacturer" class="about-manufacturer"></p>
+            <h2 class="">How to use</h2>
+            <p id="how-to-use" class="how-to-use"></p>
+            <h2 class="">Did you know?</h2>
+            <p id="did-you-know" class="did-you-know"></p>
+        </div>
+
+    </section>
+
+
+
 
     <footer>
         <div>
@@ -52,7 +88,7 @@
         <p>©2020 BEZOBALiS | LENTiS s.r.o. | J. Braneckého 8, 91101 Trenčín | IČO: 52 246 515 | Zapísaný v: Obchodnom
             registri Okresného súdu Trenčín, oddiel: Sro, vl. č.: 37863/
         </p>
-</footer>
+    </footer>
 </body>
 
 </html>

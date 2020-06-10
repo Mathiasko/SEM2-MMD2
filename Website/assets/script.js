@@ -40,13 +40,50 @@ function getProducts() {
         if (this.readyState == 4 && this.status > 400) {
             errorMessage('An error has occured while getting the data. Please try again later!');
         }
-        renderProducts()
+        // renderProducts()
     }
 
     xhttp.open('GET', `${apiUrl}categories=${productCatID}&per_page=100`, true);
     xhttp.setRequestHeader('Authorization', `Bearer ${apiKey}`);
     xhttp.send();
 
+}
+
+let= productToDisplay=''
+
+function renderProduct(productId){
+
+    for(let i= 0; i < productsArr.length; i++){
+        if (productId == productsArr[i].id){
+            productToDisplay = i
+        }
+    }
+
+    console.log(productToDisplay)
+
+    const productName = document.getElementById('priduct-name')
+    const productPrice = document.getElementById('priduct-price')
+    const productAboutManufacturer = document.getElementById('about-manufacturer')
+    const productDescription = document.getElementById('product-description')
+    const productDidYouKnow = document.getElementById('did-you-know')
+    const productHowToUse = document.getElementById('how-to-use')
+    const productIngredients = document.getElementById('product-detail')
+    const productManufacturer = document.getElementById('product-manufacturer')
+    const productPackaging = document.getElementById('product-detail')
+    const productPcG = document.getElementById('')
+    const productTags = document.getElementById('')
+    const productImage = document.getElementById('product-image')
+
+    productName.innerHTML= productsArr[productToDisplay].name
+    productPrice.innerHTML= productsArr[productToDisplay].price
+    productAboutManufacturer.innerHTML= productsArr[productToDisplay].about_manufacturer
+    productDescription.innerHTML= productsArr[productToDisplay].description
+    productDidYouKnow.innerHTML= productsArr[productToDisplay].did_you_know
+    productHowToUse.innerHTML= productsArr[productToDisplay].how_to_use
+    productIngredients.innerHTML= productsArr[productToDisplay].ingredientsmaterial
+    productManufacturer.innerHTML= productsArr[productToDisplay].manufacturer
+    productPackaging.innerHTML= productsArr[productToDisplay].packaging
+    productImage.src= productsArr[productToDisplay].image
 }
 
 function getBlogs() {

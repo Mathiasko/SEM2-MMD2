@@ -157,11 +157,16 @@
 
 html {
     font-size: 10px;
-    color: var(--text-color);
+    color: var(--text-color);   
+}
+
+a{
+    text-decoration: none;
 }
 
 body {
     background-color: var(--primary-color);
+    
 }
 
 nav {
@@ -917,6 +922,34 @@ footer {
         text-align: left;
     }
 
+    .sortProduct{
+        display: flex;
+    }
+
+    .sortBy{
+        font-size: 2vw;
+        align-self: center;
+        justify-self:center;
+        font-family: 'galanogrotesque-medium';        
+    }
+
+    .sortByA:visited{
+        color: var(--text-color);
+    }
+
+    .product-image{
+        width: 45%;
+        height: 100%;
+        position: sticky;
+        top: 10%;
+    }
+
+    .product-info{
+        width: 50%;
+        transform: translateX(10%);
+    }
+
+    
 
 
 
