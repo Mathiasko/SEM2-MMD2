@@ -312,11 +312,12 @@ p, .timetable {
 }
 
 .saver-container {
-    padding: 25px;
+    width: 85%;
+    margin: auto;
 }
 
 .product-square {
-    width: 90vw;
+    width: 100%;
 }
 
 .padding0 {
@@ -397,6 +398,10 @@ footer {
 }
 
 .hiddenSmall {
+    display: none;
+}
+
+.hidden{
     display: none;
 }
 
@@ -538,9 +543,6 @@ footer {
         display: grid;
         grid-template-columns: auto auto auto;
         padding: 0 5vw;
-    }
-    .product-square {
-        width: 27vw;
     }
     .hPadding {
         padding: 2vw 5vw;
@@ -819,16 +821,19 @@ footer {
         transform: translateY(-40px);
     }
     .saver-container {
-        width: 30%;
+        width: 26%;
+        margin-top: 5vw;
     }
     .productsDiv {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        margin:0 2vw;
     }
-    .dleft {
-        text-align: left;
+
+    .cursor{
+        cursor: pointer;
     }
+
     .sortProduct {
         display: flex;
     }
@@ -845,7 +850,7 @@ footer {
         width: 45%;
         height: 100%;
         position: sticky;
-        top: 10%;
+        top: 5%;
         left: 2.5%;
     }
 
