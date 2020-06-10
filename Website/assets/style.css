@@ -784,6 +784,11 @@ footer {
         font-size: 1vw;
     }
     /* education */
+
+    .tam-circle{
+        border-radius: 1000px;
+    }
+
     .width35 {
         width: 36%;
     }
