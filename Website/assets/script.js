@@ -19,8 +19,11 @@ const productManufacturer = document.getElementById('product-manufacturer')
 const productPackaging = document.getElementById('product-detail')
 const productTags = document.getElementById('')
 const productImage = document.getElementById('product-image')
+const sort = document.getElementById('sort')
 
 let = productToDisplay = ''
+
+
 
 function getProducts() {
     const xhttp = new XMLHttpRequest();
@@ -42,7 +45,8 @@ function getProducts() {
                         price: product.acf.price,
                         pcg: product.acf.pcg,
                         tags: product.acf.tags,
-                        image: product.acf.image
+                        image: product.acf.image,
+                        category: product.acf.category.post_title
                     }
                     productsArr.push(obj)
                 });
@@ -56,11 +60,9 @@ function getProducts() {
         }
         renderProducts()
     }
-
     xhttp.open('GET', `${apiUrl}categories=${productCatID}&per_page=100`, true);
     xhttp.setRequestHeader('Authorization', `Bearer ${apiKey}`);
     xhttp.send();
-
 }
 
 function renderProduct(productId) {
@@ -198,7 +200,7 @@ function renderProducts() {
         const productDiv = document.createElement('div')
         productDiv.id = productsArr[i].id
         productDiv.classList.add('saver-container', 'cursor')
-        productDiv.addEventListener('click', myfunction => { renderProduct (productsArr[i].id)})
+        productDiv.addEventListener('click', myfunction => { renderProduct(productsArr[i].id) })
         productsDiv.appendChild(productDiv)
 
         const productManufacturerDiv = document.createElement('p')
@@ -242,6 +244,54 @@ function activeFilter(div) {
         activeLinks[i].classList.remove('active');
     }
     div.classList.add('active');
+
+
+}
+
+function updateManufacturer() {
+    const manufacturerArr = []
+    for (let i = 0; i < productsArr.length; i++) {
+
+        let match = false
+        for (let j = 0; j < manufacturerArr.length; j++) {
+            if (productsArr[i].manufacturer == manufacturerArr[j]) {
+                match = !match
+            }
+        }
+        if (match == false) {
+            manufacturerArr.push(productsArr[i].manufacturer)
+        }
+    }
+    console.log(manufacturerArr)
+    displaySort(manufacturerArr)
+}
+
+function updateCategories() {
+    const categoryArr = []
+    for (let i = 0; i < productsArr.length; i++) {
+
+        let match = false
+        for (let j = 0; j < categoryArr.length; j++) {
+            if (productsArr[i].category == categoryArr[j]) {
+                match = !match
+            }
+        }
+        if (match == false) {
+            categoryArr.push(productsArr[i].category)
+        }
+    }
+    console.log(categoryArr)
+    displaySort(categoryArr)
+}
+
+function displaySort(arr){
+    sort.innerHTML=''
+    for(let i = 0; i < arr.length; i++){
+        const sortItem= document.createElement('p')
+        sortItem.innerHTML = arr[i]
+        sortItem.classList.add('sortItem')
+        sort.appendChild(sortItem)
+    }
 }
 
 const sortDiv = document.querySelectorAll("#sortDiv")

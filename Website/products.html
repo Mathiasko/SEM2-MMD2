@@ -33,13 +33,13 @@
 
         <div class="tam-desktopnav hiddenSmall">
             <ul class="menu-list">
-                <li><a href="products.html">products</a></li>
-                <li><a href="education.html">lectures</a></li>
-                <li><a href="blog.html">blog</a></li>
-                <li><a href="index.html"><img class="top-logo" src="assets/images/vector/logo.svg"
+                <li><a class="hoverEffect" href="products.html">products</a></li>
+                <li><a class="hoverEffect" href="education.html">lectures</a></li>
+                <li><a class="hoverEffect" href="blog.html">blog</a></li>
+                <li><a href="index.html"><img class="top-logo hoverEffectLogo" src="assets/images/vector/logo.svg"
                             alt="bezobalis logo"></a></li>
-                <li><a href="about_us.html">about us</a></li>
-                <li><a href="contact.html">contact</a></li>
+                <li><a class="hoverEffect" href="about_us.html">about us</a></li>
+                <li><a class="hoverEffect" href="contact.html">contact</a></li>
                 <li class="tam-hidden">cart</li>
             </ul>
         </div>
@@ -83,11 +83,15 @@
             <div class="sortProduct">
                 <h1 class="hPadding">Sort by</h1>
                 <a id="sortDiv" class="flex sortByA" href="">
-                    <p class="sortBy" onclick="activeFilter(this)">manufacturer</p>
+                    <p class="sortBy" onclick="activeFilter(this), updateManufacturer()">manufacturer</p>
                 </a>
                 <a id="sortDiv" class="flex sortByA" href="">
-                    <p class="sortBy" onclick="activeFilter(this)">category</p>
+                    <p class="sortBy" onclick="activeFilter(this), updateCategories()">category</p>
                 </a>
+            </div>
+
+            <div id="sort" class="sort">
+                
             </div>
 
             <div class="productsDiv" id="productsDiv"></div>
@@ -123,23 +127,24 @@
 
     <footer>
         <div class="footerGrid">
-            <div class="table futGr1">
-                <p>OPENING HOURS</p>
+            <div class="table futGr1 ">
                 <div class="table-container timetable">
-                    <p class="futTime">Monday:</p>
-                    <p class="futTime"> 9:00 – 18:00 </p>
-                    <p class="futTime">Tuesday:</p>
-                    <p class="futTime"> 9:00 – 18:00 </p>
-                    <p class="futTime">Wednesday:</p>
-                    <p class="futTime"> 9:00 – 18:00 </p>
-                    <p class="futTime">Thursday:</p>
-                    <p class="futTime"> 9:00 – 18:00 </p>
-                    <p class="futTime">Friday:</p>
-                    <p class="futTime"> 9:00 – 18:00 </p>
-                    <p class="futTime">Saturday:</p>
-                    <p class="futTime"> 8:30 – 12:30 </p>
-                    <p class="futTime">Sunday:</p>
-                    <p class="futTime"> closed</p>
+                    <p class="futTit">OPENING HOURS</p>
+                    
+                    <div>Monday:</div>
+                    <div> 9:00 – 18:00 </div>
+                    <div>Tuesday:</div>
+                    <div> 9:00 – 18:00 </div>
+                    <div>Wednesday:</div>
+                    <div> 9:00 – 18:00 </div>
+                    <div>Thursday:</div>
+                    <div> 9:00 – 18:00 </div>
+                    <div>Friday:</div>
+                    <div> 9:00 – 18:00 </div>
+                    <div>Saturday:</div>
+                    <div> 8:30 – 12:30 </div>
+                    <div>Sunday:</div>
+                    <div> closed</div>
                 </div>
             </div>
 
